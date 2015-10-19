@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  has_many :questions
+  has_many :responses
+
   attr_accessor :password
   validates_confirmation_of :password
   before_save :encrypt_password
@@ -8,7 +11,7 @@ class User < ActiveRecord::Base
     self.password_hash = BCrypt::Engine.hash_secret(password, password_salt)
   end
 
-  def self.authenticate(email, password)    
+  def self.authenticate(email, password)
     user = User.where(email: email).first
       if user && user.password_hash == BCrypt::Engine.hash_secret(password, user.password_salt)
         user
@@ -16,5 +19,4 @@ class User < ActiveRecord::Base
         nil
       end
     end
-
 end

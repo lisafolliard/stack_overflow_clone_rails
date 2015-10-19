@@ -3,5 +3,6 @@ class Question < ActiveRecord::Base
   validates :description, :presence => true
   validates :author, :presence => true
 
+  belongs_to :user
   has_many :responses
 end
