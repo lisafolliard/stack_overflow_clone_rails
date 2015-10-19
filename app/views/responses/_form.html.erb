@@ -1,0 +1,9 @@
+<%= form_for [@question, @response] do |f| %>
+  <%= f.label :response %>
+  <%= f.text_field :response %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit  %>
+<% end %>
