@@ -5,9 +5,9 @@
 
   <ul>
     <% @question.responses.each do |response| %>
-      <li>
-        <%= response.response %>
-      </li>
+      <li><%= response.response %></li>
+      <li>by: <%= response.name %></li>
+      <li>on: <%= response.created_at %></li>
     <% end %>
   </ul>
 <% else %>
