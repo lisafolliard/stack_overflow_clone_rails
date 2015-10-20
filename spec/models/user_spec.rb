@@ -11,4 +11,9 @@ describe User do
     user.email.should eq 'joe@blow.com'
   end
 
+  it 'returns correct password' do
+    user = FactoryGirl.create(:user)
+    user.password.should eq 'password'
+  end
+
 end
