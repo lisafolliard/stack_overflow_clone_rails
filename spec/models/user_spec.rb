@@ -21,10 +21,10 @@ describe User do
     User.authenticate(user.email, user.password).should eq user
   end
 
-  # it 'returns nil if authentication fails' do
-  #   user = FactoryGirl.create(:user)
-  #   User.authenticate('foo@bar.com', user.password)).to eq nil
-  #   User.authenticate(user.email, 'foo')).to eq nil
-  # end
+  it 'returns nil if authentication fails' do
+    user = FactoryGirl.create(:user)
+    User.authenticate('foo@bar.com', user.password).should eq nil
+    User.authenticate(user.email, 'foo').should eq nil
+  end
 
 end
