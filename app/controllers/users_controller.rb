@@ -6,6 +6,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      #send email
+      UserMailer.signup_confirmation(@user).deliver
+
+      
       session[:user_id] = @user.id
       flash[:notice] = "Welcome to the site!"
     redirect_to "/"
