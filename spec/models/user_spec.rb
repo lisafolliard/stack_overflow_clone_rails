@@ -6,4 +6,9 @@ describe User do
   it { should have_many :questions }
   it { should have_many :responses }
 
+  it 'returns correct email' do
+    user = FactoryGirl.create(:user)
+    user.email.should eq 'joe@blow.com'
+  end
+
 end
