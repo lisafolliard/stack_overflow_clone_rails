@@ -16,4 +16,9 @@ describe User do
     user.password.should eq 'password'
   end
 
+  # it 'can authenticate' do
+  #   user = FactoryGirl.create(:user)
+  #   User.authenticate(user.email, user.password).to eq user
+  # end
+
 end
