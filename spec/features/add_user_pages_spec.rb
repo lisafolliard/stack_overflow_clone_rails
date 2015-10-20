@@ -20,7 +20,7 @@ describe 'add a user process' do
   end
 
   # it 'allows a user to log in' do
-  #   visit new_user_path
+  #   visit '/'
   #   click_on "Log In"
   #   fill_in 'Email', :with => 'bob@bob.com'
   #   fill_in 'Password', :with => '55555'

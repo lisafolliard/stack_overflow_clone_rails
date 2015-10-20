@@ -29,16 +29,6 @@
         null,
         null,
         null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
         null
       ],
       "/Users/Guest/Desktop/stack_overflow_clone_rails/spec/rails_helper.rb": [
@@ -380,6 +370,7 @@
         null,
         1,
         1,
+        null,
         1,
         0,
         0,
@@ -456,14 +447,14 @@
         1,
         null,
         1,
-        3,
-        3,
+        4,
+        4,
         null,
         null,
         1,
+        2,
+        2,
         1,
-        1,
-        0,
         null,
         null,
         null,
@@ -481,11 +472,14 @@
       "/Users/Guest/Desktop/stack_overflow_clone_rails/config/routes.rb": [
         1,
         1,
+        null,
         1,
         1,
         1,
         null,
         1,
+        null,
+        null,
         1,
         null,
         1,
@@ -554,6 +548,19 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/stack_overflow_clone_rails/spec/features/delete_question_pages_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/stack_overflow_clone_rails/spec/models/question_spec.rb": [
         1,
         null,
@@ -596,6 +603,12 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -604,6 +617,6 @@
         null
       ]
     },
-    "timestamp": 1445368585
+    "timestamp": 1445375528
   }
 }
