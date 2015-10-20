@@ -10,4 +10,12 @@ describe 'add a user process' do
     click_button 'Click Here'
     expect(page).to have_content 'joe@blow.com' # takes user to sign in page
   end
+
+
+  it 'displays errors when the form is incomplete' do
+    visit new_user_path
+    click_on 'Sign Up'
+    click_button 'Click Here'
+    expect(page).to have_content "There was a problem creating your account"
+  end
 end
