@@ -16,6 +16,8 @@
 
 <p><%= link_to "Update Question", edit_question_path(@question) %></p>
 
+<p><%= link_to "Delete Question", question_path(@question), :method => 'delete' %></p>
+
 <p><%= link_to "Add a response", new_question_response_path(@question) %></p>
 
 <p><%= link_to "Return Home", questions_path %></p>
