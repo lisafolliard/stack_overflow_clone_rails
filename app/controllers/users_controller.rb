@@ -9,7 +9,6 @@ class UsersController < ApplicationController
       #send email
       UserMailer.signup_confirmation(@user).deliver
 
-      
       session[:user_id] = @user.id
       flash[:notice] = "Welcome to the site!"
     redirect_to "/"
